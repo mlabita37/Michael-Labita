@@ -425,9 +425,42 @@ footer {
 #line{
   display: inline-block;
 }
-#heart{
+/*#heart{
   font-size: 1em;
   display: inline-block;
+}*/
+#heart {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 20px;
+    height: 18px;
+    animation: grow 2s infinite;
+    transform-origin: center;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 14px;
+  top: 0;
+  width: 15px;
+  height: 25px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes grow {
+  0% { transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(1);}
 }
 
 .copyright {

@@ -71,28 +71,28 @@ setInterval(function(){
   i++;
 }, 200);
 
-// Heartbeat animation in footer
-function beatingHeart(){
-setInterval(function(){
-  $('#heart').css({
-   'font-size' : '1.25em',
-   'margin-top' : '-4px'
-});
-  setTimeout(function(){
-      $('#heart').css({
-        'font-size' :'1em',
-        'margin-top' : '0'
-      });
-
-  }, 1000);
-
-}, 2000);
-}
+// // Heartbeat animation in footer
+// function beatingHeart(){
+// setInterval(function(){
+//   $('#heart').css({
+//    'font-size' : '1.25em',
+//    'margin-top' : '-4px'
+// });
+//   setTimeout(function(){
+//       $('#heart').css({
+//         'font-size' :'1em',
+//         'margin-top' : '0'
+//       });
+//
+//   }, 1000);
+//
+// }, 2000);
+// }
 
 $(function(){
 toggleNav();
 closeAfterClick();
-beatingHeart();
+// beatingHeart();
 setName("Michael Labita");
 scrollNav();
 });
