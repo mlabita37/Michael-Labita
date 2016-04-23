@@ -48,28 +48,28 @@ $(window).scroll(function() {
     }
 });
 
-// Type/FadeIn title
-var names;
-function setName(name){
-  names = name.split('');
-}
-
-var currentText = [];
-var newText;
-var i=0;
-setInterval(function(){
-	if (i < names.length){
-  		currentText.push(names[i]);
-    	newText = currentText.toString();
-    	newerText = newText.replace(/,/g , "");
-      $('#hidden').css('display', 'none');
-      $('#name').css('opacity', '+=0.07');
-  		$('#name').text(newerText);
-      $('h2').css('opacity', '+=0.06');
-      $('address').css('opacity', '+=0.06');
-  }
-  i++;
-}, 200);
+// // Type/FadeIn title
+// var names;
+// function setName(name){
+//   names = name.split('');
+// }
+//
+// var currentText = [];
+// var newText;
+// var i=0;
+// setInterval(function(){
+// 	if (i < names.length){
+//   		currentText.push(names[i]);
+//     	newText = currentText.toString();
+//     	newerText = newText.replace(/,/g , "");
+//       $('#hidden').css('display', 'none');
+//       $('#name').css('opacity', '+=0.07');
+//   		$('#name').text(newerText);
+//       $('h2').css('opacity', '+=0.06');
+//       $('address').css('opacity', '+=0.06');
+//   }
+//   i++;
+// }, 200);
 
 // // Heartbeat animation in footer
 // function beatingHeart(){
@@ -93,6 +93,6 @@ $(function(){
 toggleNav();
 closeAfterClick();
 // beatingHeart();
-setName("Michael Labita");
+// setName("Michael Labita");
 scrollNav();
 });

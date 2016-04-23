@@ -137,7 +137,17 @@ h1, #name{
   text-align: center;
   text-transform: uppercase;
   color: darkorange;
-  opacity: 0.1;
+}
+#name, h2, address {
+    animation: fadein 8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 
@@ -174,13 +184,11 @@ h2 {
     text-align:center;
     margin:10px auto 0;
     color: #333;
-    opacity: 0;
 }
 
 address {
     font-weight:300px;
     text-align:center;
-    opacity: 0;
     margin: 10px auto 150px;
     font-size: 1em;
 }
@@ -596,7 +604,6 @@ address {
   font-weight: 300px;
   text-align: center;
   margin: 10px auto 300px;
-  opacity: 0;
 }
 
 p {
