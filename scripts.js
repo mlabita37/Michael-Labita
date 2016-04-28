@@ -39,14 +39,16 @@ $('li').click(function() {
 });
 }
 
-// Fade header on scroll
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 40) {
-    $( "header" ).css('background-color', 'rgba(0,150,136,0.5)');
- } else {
-    $( "header" ).css('background-color', 'rgba(0,150,136,1');
- }
+//Fade header on scroll
+
+ $(window).scroll(function(){
+   if ($(this).scrollTop() > 40){
+     $( "header" ).css('background-color', 'rgba(0,150,136,0.5)');
+   }else {
+     $( "header" ).css('background-color', 'rgba(0,150, 136,1)');
+   }
  });
+
 
 
 $(function(){
